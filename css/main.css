@@ -1,0 +1,921 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+body {
+  background-color: #ECECEC;
+}
+
+.header {
+  width: 100%;
+  margin-bottom: 75px;
+}
+.header .headerContent {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.header .headerContent .logo {
+  padding: 59px 0 0 128px;
+}
+.header .headerContent .logo img {
+  width: 287px;
+}
+.header .headerContent .hsubtitle {
+  flex: 1;
+  text-align: center;
+}
+.header .headerContent .hsubtitle p {
+  margin-right: 346px;
+  color: #FF7348;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.aside {
+  height: 100%;
+  padding-top: 47px;
+  float: left;
+  width: 400px;
+}
+.aside .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.aside .menu a {
+  text-decoration: none;
+}
+.aside .menu a .menuBtn {
+  padding: 20px 0 20px 100px;
+  cursor: pointer;
+  transition: 500ms;
+}
+.aside .menu a .menuBtn p {
+  font-size: 20px;
+  color: #060606;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+.aside .menu a .menuBtn:hover {
+  scale: 1.05;
+}
+.aside .menu a .activeBtn {
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1019607843);
+  border-radius: 0 49px 49px 0;
+}
+.aside .menu a .activeBtn p {
+  color: #FF7348;
+}
+
+main {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 70px;
+}
+
+.container {
+  width: 80%;
+  max-width: 1080px;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 20px;
+}
+.title .titleLeft .back {
+  position: relative;
+  left: -30px;
+  margin-top: 7px;
+  width: 22px;
+  cursor: pointer;
+  transition: 300ms;
+  user-select: none;
+}
+.title .titleLeft .back:hover {
+  scale: 1.05;
+}
+.title .titleRight {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+.title .titleRight .titleTop {
+  display: flex;
+  justify-content: space-between;
+}
+.title .titleRight .titleTop h1 {
+  font-weight: 800;
+  font-size: 28px;
+}
+.title .titleRight .titleTop .language {
+  position: relative;
+}
+.title .titleRight .titleTop .language .languageBtn {
+  position: relative;
+  z-index: 11;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 8px 16px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.0509803922);
+  border: 2px solid #D8D8D8;
+  user-select: none;
+  cursor: pointer;
+}
+.title .titleRight .titleTop .language .languageBtn p {
+  font-size: 16px;
+  color: #060606;
+  font-weight: 600;
+  width: 33px;
+}
+.title .titleRight .titleTop .language .languageBtn img {
+  width: 10px;
+  height: 5px;
+}
+.title .titleRight .titleTop .language .languageList {
+  position: absolute;
+  z-index: 10;
+  width: 67%;
+  top: 31px;
+  padding: 8px 16px;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.0509803922);
+  border-radius: 0 0 8px 8px;
+}
+.title .titleRight .titleTop .language .languageList li {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.title .titleRight .titleTop .language .languageList li p {
+  font-size: 16px;
+  color: #060606;
+  font-weight: 600;
+}
+.title .titleRight .titleTop .language .languageList li img {
+  width: 15px;
+}
+.title .titleRight .titleTop .language .languageList-active {
+  display: flex;
+}
+
+.subtitle h2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #535353;
+}
+.subtitle h2 b {
+  font-weight: 700;
+}
+
+.connection {
+  display: flex;
+}
+.connection .connectionContent {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 7px 15px;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.0509803922);
+  background: #FFFFFF;
+  border-radius: 25px;
+}
+.connection .connectionContent h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #00C974;
+}
+.connection .connectionContent img {
+  width: 23px;
+  margin-left: 12px;
+}
+
+.section {
+  background: #FFFFFF;
+  border-radius: 8px 8px 0 0;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+}
+.section .sectionTitle {
+  position: relative;
+  top: -5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #FFFFFF;
+  border: 2px solid #D8D8D8;
+  border-radius: 8px;
+  padding: 10px 25px;
+  cursor: pointer;
+  user-select: none;
+}
+.section .sectionTitle .chevron {
+  width: 14px;
+  height: 8px;
+  rotate: 180deg;
+}
+.section .sectionTitle .chevron-active {
+  rotate: 0deg;
+}
+.section .sectionTitle h3 {
+  color: #535353;
+  font-size: 18px;
+  font-weight: 800;
+}
+.section .sectionContent .poleT {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  grid-template-areas: "statusT yoursT requiredT";
+}
+.section .sectionContent .poleT .yoursT {
+  grid-area: yoursT;
+}
+.section .sectionContent .poleT .yoursT h5 {
+  font-size: 16px;
+  color: #060606;
+  font-weight: 800;
+}
+.section .sectionContent .poleT .requiredT {
+  grid-area: requiredT;
+}
+.section .sectionContent .poleT .requiredT h5 {
+  font-size: 16px;
+  color: #060606;
+  font-weight: 800;
+}
+.section .sectionContent .pole {
+  display: grid;
+  grid-template-columns: 0.5fr 0.8fr 0.8fr;
+  grid-template-areas: "status yours required";
+  margin: 15px;
+  padding: 15px;
+  align-items: start;
+  border-bottom: solid #E7E7E7 1px;
+}
+.section .sectionContent .pole:last-of-type {
+  border-bottom: none;
+}
+.section .sectionContent .pole .status {
+  display: flex;
+  align-items: center;
+  grid-area: status;
+}
+.section .sectionContent .pole .status img {
+  width: 23px;
+  margin-right: 15px;
+}
+.section .sectionContent .pole .status h5 {
+  font-size: 16px;
+  color: #060606;
+  font-weight: 800;
+}
+.section .sectionContent .pole .yours {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: yours;
+}
+.section .sectionContent .pole .yours p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #535353;
+  line-height: 22px;
+}
+.section .sectionContent .pole .yours p b {
+  font-weight: 800;
+}
+.section .sectionContent .pole .yours p a {
+  text-decoration: underline;
+  color: #4F95FF;
+}
+.section .sectionContent .pole .required {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: required;
+}
+.section .sectionContent .pole .required p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #060606;
+  line-height: 22px;
+}
+.section .sectionContent .pole .required p b {
+  font-weight: 800;
+}
+.section .sectionContent .pole .required p a {
+  text-decoration: underline;
+  color: #4F95FF;
+}
+.section .sectionContent-hide {
+  display: none;
+}
+
+.section-hide {
+  background: none;
+  height: 50px;
+  box-shadow: none;
+}
+
+.section-last {
+  border-radius: 8px 8px 7px 7px;
+}
+
+.buttonsBottom {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.buttonsBottom .retryButton {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #FFFFFF;
+  border: #FF7348 1px solid;
+  border-radius: 53px;
+  padding: 10px 125px;
+  user-select: none;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FF7348;
+}
+.buttonsBottom .retryButton img {
+  width: 24px;
+  transition: transform 0.5s;
+}
+.buttonsBottom .retryButton:hover {
+  scale: 1.03;
+}
+.buttonsBottom .retryButton:hover img {
+  transform: rotate(360deg);
+}
+.buttonsBottom .continueButton {
+  background: #FF7348;
+  border: none;
+  border-radius: 53px;
+  padding: 10px 125px;
+  user-select: none;
+  cursor: pointer;
+  transition: 300ms;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.buttonsBottom .continueButton:hover {
+  scale: 1.03;
+}
+
+.formBlock .databaseForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.formBlock .databaseForm .databaseName, .formBlock .databaseForm .databaseUserName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formBlock .databaseForm .databaseName label, .formBlock .databaseForm .databaseUserName label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .databaseForm .databaseName label span, .formBlock .databaseForm .databaseUserName label span {
+  color: #FF8B8B;
+}
+.formBlock .databaseForm .databaseName input, .formBlock .databaseForm .databaseUserName input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .databaseForm .databaseName input::placeholder, .formBlock .databaseForm .databaseUserName input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .databaseForm .databaseName input:focus, .formBlock .databaseForm .databaseUserName input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .databaseForm .databasePassword {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel label span {
+  color: #FF8B8B;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel .hideorshowBtn {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  user-select: none;
+  transition: 300ms;
+  cursor: pointer;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel .hideorshowBtn img {
+  width: 23px;
+}
+.formBlock .databaseForm .databasePassword .passwordLabel .hideorshowBtn img:hover {
+  scale: 1.05;
+}
+.formBlock .databaseForm .databasePassword input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .databaseForm .databasePassword input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .databaseForm .databasePassword input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .databaseForm .databaseAdvanced {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 20px 22px;
+  gap: 17px;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedTitle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedTitle .chevron {
+  width: 14px;
+  height: 8px;
+  rotate: 180deg;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedTitle .chevron-active {
+  rotate: 0deg;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedTitle h3 {
+  color: #535353;
+  font-size: 18px;
+  font-weight: 700;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent {
+  display: none;
+  flex-direction: column;
+  gap: 17px;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost label, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort label, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost label span, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort label span, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix label span {
+  color: #FF8B8B;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost input, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort input, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost input::placeholder, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort input::placeholder, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost input:focus, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort input:focus, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost .TableNamePrefixInput::placeholder, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort .TableNamePrefixInput::placeholder, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix .TableNamePrefixInput::placeholder {
+  color: #060606;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent .databaseHost p, .formBlock .databaseForm .databaseAdvanced .advancedContent .databasePort p, .formBlock .databaseForm .databaseAdvanced .advancedContent .databaseTableNamePrefix p {
+  color: #888;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 19.5px;
+}
+.formBlock .databaseForm .databaseAdvanced .advancedContent-active {
+  display: flex;
+}
+.formBlock .adminForm {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.formBlock .adminForm .adminName {
+  display: flex;
+  gap: 34px;
+}
+.formBlock .adminForm .adminName .firstName, .formBlock .adminForm .adminName .lastName {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.formBlock .adminForm .adminName .firstName label, .formBlock .adminForm .adminName .lastName label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .adminForm .adminName .firstName label span, .formBlock .adminForm .adminName .lastName label span {
+  color: #FF8B8B;
+}
+.formBlock .adminForm .adminName .firstName input, .formBlock .adminForm .adminName .lastName input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .adminForm .adminName .firstName input::placeholder, .formBlock .adminForm .adminName .lastName input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .adminForm .adminName .firstName input:focus, .formBlock .adminForm .adminName .lastName input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .adminForm .adminEmail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.formBlock .adminForm .adminEmail .emailTitle {
+  display: flex;
+  justify-content: space-between;
+}
+.formBlock .adminForm .adminEmail .emailTitle label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .adminForm .adminEmail .emailTitle label span {
+  color: #FF8B8B;
+}
+.formBlock .adminForm .adminEmail input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .adminForm .adminEmail input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .adminForm .adminEmail input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .adminForm .adminPhone {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+}
+.formBlock .adminForm .adminPhone label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .adminForm .adminPhone label span {
+  color: #FF8B8B;
+}
+.formBlock .adminForm .adminPhone .phoneInput {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .adminForm .adminPhone .phoneInput .phoneCountry {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 12px 16px;
+  user-select: none;
+  cursor: pointer;
+}
+.formBlock .adminForm .adminPhone .phoneInput .phoneCountry p {
+  color: #060606;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+.formBlock .adminForm .adminPhone .phoneInput .phoneCountry img {
+  width: 10px;
+  height: 5px;
+}
+.formBlock .adminForm .adminPhone .phoneInput input {
+  width: 100%;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #667085;
+  border: none;
+  background: #FFFFFF;
+}
+.formBlock .adminForm .adminPhone .phoneInput input::placeholder {
+  font-size: 16px;
+  font-weight: 500;
+  color: #667085;
+}
+.formBlock .adminForm .adminPhone .phoneInput input:focus {
+  outline: none;
+}
+.formBlock .adminForm .adminPhone .phoneList {
+  display: none;
+  position: absolute;
+  background: #FFFFFF;
+  width: 100%;
+  top: 70px;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .adminForm .adminPhone .phoneList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+}
+.formBlock .adminForm .adminPhone .phoneList li .country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.formBlock .adminForm .adminPhone .phoneList li .country img {
+  width: 23px;
+}
+.formBlock .adminForm .adminPhone .phoneList li .country h5 {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #060606;
+}
+.formBlock .adminForm .adminPhone .phoneList li .country h5 span {
+  color: #888;
+}
+.formBlock .adminForm .adminPhone .phoneList li img {
+  width: 20px;
+}
+.formBlock .adminForm .adminPhone .phoneList li:hover {
+  background-color: #F5F5F5;
+}
+.formBlock .adminForm .adminPhone .phoneList-active {
+  display: block;
+}
+.formBlock .adminForm .adminPassword {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.formBlock .adminForm .adminPassword .passwordLabel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .passwordTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .passwordTitle label {
+  font-size: 15px;
+  color: #060606;
+  font-weight: 500;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .passwordTitle label span {
+  color: #FF8B8B;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .hideorshowBtn {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  user-select: none;
+  transition: 300ms;
+  cursor: pointer;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .hideorshowBtn img {
+  width: 23px;
+}
+.formBlock .adminForm .adminPassword .passwordLabel .hideorshowBtn img:hover {
+  scale: 1.05;
+}
+.formBlock .adminForm .adminPassword input {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #060606;
+  border-radius: 8px;
+  border: 1px solid #D8D8D8;
+  background: #FFFFFF;
+  box-shadow: 0 1px 6px 1px rgba(16, 24, 40, 0.05);
+}
+.formBlock .adminForm .adminPassword input::placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  color: #667085;
+}
+.formBlock .adminForm .adminPassword input:focus {
+  outline: #FF7348 1px solid;
+}
+.formBlock .adminForm .adminAgree {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.formBlock .adminForm .adminAgree label {
+  color: #344054;
+  font-size: 16px;
+  font-weight: 500;
+}
+.formBlock .adminForm .adminAgree label span {
+  text-decoration: underline;
+}
+.formBlock .adminForm .adminAgree input {
+  appearance: none;
+  position: relative;
+  border: #535353 1px solid;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.formBlock .adminForm .adminAgree input:checked {
+  background-color: #FF7348;
+  border: 1px solid #FF7348;
+  color: #fff;
+}
+.formBlock .adminForm .adminAgree input:checked::before {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+
+.modulesSection {
+  background: #FFFFFF;
+  border-radius: 8px 8px 0 0;
+  padding-bottom: 15px;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.1);
+}
+.modulesSection .sectionTitle {
+  position: relative;
+  top: -5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #FFFFFF;
+  border: 2px solid #D8D8D8;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+.modulesSection .sectionTitle .chevron {
+  width: 15px;
+  height: 8px;
+  rotate: 180deg;
+}
+.modulesSection .sectionTitle .chevron-active {
+  rotate: 0deg;
+}
+.modulesSection .sectionTitle h3 {
+  color: #060606;
+  font-size: 18px;
+  font-weight: 800;
+}
+.modulesSection .sectionContent {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modulesSection .sectionContent .pole {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 0.5px solid #D8D8D8;
+}
+.modulesSection .sectionContent .pole .poleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.modulesSection .sectionContent .pole .poleContent h5 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #060606;
+}
+.modulesSection .sectionContent .pole .poleContent p {
+  color: #535353;
+  font-size: 16px;
+  font-weight: 400;
+}
+.modulesSection .sectionContent .pole .poleInput input {
+  appearance: none;
+  position: relative;
+  border: #535353 1px solid;
+  border-radius: 4px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+.modulesSection .sectionContent .pole .poleInput input:checked {
+  background-color: #FF7348;
+  border: 1px solid #FF7348;
+  color: #fff;
+}
+.modulesSection .sectionContent .pole .poleInput input:checked::before {
+  content: "✔";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+.modulesSection .sectionContent .pole:last-of-type {
+  border: 0;
+}
+.modulesSection .sectionContent-hide {
+  display: none;
+}
+
+.modulesSection-last {
+  border-radius: 8px 8px 25px 25px;
+}
+
+.section-hide {
+  background: none;
+  height: 50px;
+  box-shadow: none;
+}
+
+.error {
+  color: #FF3939;
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

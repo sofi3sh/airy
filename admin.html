@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <link type="text/css" href="css/adaptive.css" rel="stylesheet" />
+    <link type="text/css" href="css/zero.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <div class="headerContent">
+        <div class="logo"><img src="img/logo.png"  alt="logo"/></div>
+    </div>
+</header>
+<aside class="aside">
+    <div class="menu">
+        <a href="index.html"><div class="menuBtn"><p>1 Check compatibility</p></div></a>
+        <a href="database.html"><div class="menuBtn"><p>2 Database configuration</p></div></a>
+        <a href="admin.html"><div class="menuBtn activeBtn"><p>3 Admin registration</p></div></a>
+        <a href="modules.html"><div class="menuBtn"><p>4 Select modules</p></div></a>
+    </div>
+</aside>
+<main>
+    <div class="container">
+        <div class="title">
+            <div class="titleLeft">
+                <img src="icons/arrow.png" alt="arrow" class="back js-back"/>
+            </div>
+            <div class="titleRight">
+                <div class="titleTop">
+                    <h1>Check compatibility</h1>
+                    <div class="language">
+                        <div class="languageBtn js-languageBtn">
+                            <p>ENG</p><img src="./icons/chevron.png" alt="chevron"/>
+                        </div>
+                        <ul class="languageList js-languageList">
+                            <li><p>ENG</p><img src="icons/check.png" alt="check"></li>
+                            <li><p>UA</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formBlock">
+            <form class="adminForm js-adminForm">
+                <div class="adminName">
+                    <div class="firstName">
+                        <label for="firstname">First name<span>*</span></label>
+                        <input name="firstName" type="text" id="firstname" placeholder="First name" required/>
+                    </div>
+                    <div class="lastName">
+                        <label for="lastname">Last name<span>*</span></label>
+                        <input name="lastName" type="text" id="lastname" placeholder="Last name" required/>
+                    </div>
+                </div>
+                <div class="adminEmail">
+                    <div class="emailTitle">
+                        <label for="email">Email<span>*</span></label>
+                        <p class="error js-errorMessageEmail"></p>
+                    </div>
+                    <input name="email" type="text" id="email" placeholder="you@company.com" required/>
+                </div>
+                <div class="adminPhone">
+                    <label for="phone">Phone Number<span>*</span></label>
+                    <div class="phoneInput">
+                        <div class="phoneCountry js-phoneCountry">
+                            <p>US</p>
+                            <img src="icons/chevron.png" alt="chevron"/>
+                        </div>
+                        <input id="phone" type="tel" name="phone"/>
+                    </div>
+                    <ul class="phoneList js-phoneList">
+                        <li>
+                            <div class="country">
+                                <img src="flags/US.png" alt="US"><h5>United States <span>+1</span></h5>
+                            </div>
+                            <img src="icons/check.png" alt="check"/>
+                        </li>
+                        <li>
+                            <div class="country">
+                                <img src="flags/US.png" alt="US"><h5>United States <span>+1</span></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="country">
+                                <img src="flags/US.png" alt="US"><h5>United States <span>+1</span></h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="country">
+                                <img src="flags/US.png" alt="US"><h5>United States <span>+1</span></h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="adminPassword">
+                    <div class="passwordLabel">
+                        <div class="passwordTitle">
+                            <label for="password">Password<span>*</span></label>
+                            <p class="error js-errorMessagePassword"></p>
+                        </div>
+                        <div class="hideorshowBtn js-hideorshowBtn">
+                            <img src="icons/hide.png" alt="hide" class="js-toggleHideImg"/>
+                        </div>
+                    </div>
+                    <input name="password" type="password" class="js-password" id="password" placeholder="● ● ● ● ● ● ●"/>
+                </div>
+                <div class="adminPassword">
+                    <div class="passwordLabel">
+                        <div class="passwordTitle">
+                            <label for="confirmPassword">Password confirmation<span>*</span></label>
+                        </div>
+                        <div class="hideorshowBtn js-hideorshowBtn">
+                            <img src="icons/hide.png" alt="hide" class="js-toggleHideImg"/>
+                        </div>
+                    </div>
+                    <input name="confirmPassword" type="password" class="js-password" id="confirmPassword" placeholder="● ● ● ● ● ● ●"/>
+                </div>
+                <div class="adminAgree">
+                    <input type="checkbox" name="agree" id="agree" required/>
+                    <label for="agree">You agree to our friendly <span>privacy policy.</span></label>
+                </div>
+                <div class="buttonsBottom">
+                    <button class="continueButton">Save and continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="js/main.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

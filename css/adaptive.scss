@@ -1,0 +1,291 @@
+$orange: #FF7348;
+$white: #FFFFFF;
+$gray: #535353;
+$black: #060606;
+$hyper: #4F95FF;
+$success: #00C974;
+$placeholder: #667085;
+
+@media only screen and (max-width: 1200px) {
+  .header{
+    .headerContent{
+      .logo{
+        padding: 40px 0 0 40px;
+      }
+      .hsubtitle{
+        p{
+          margin-right: calc(287px + 40px);
+        }
+      }
+    }
+  }
+  .aside{
+    width: 300px;
+    .menu{
+      a{
+        .menuBtn{
+          padding: 20px 0 20px 40px;
+        }
+      }
+    }
+  }
+  .section{
+    .sectionContent{
+      .pole{
+        padding: 10px;
+        margin: 0;
+        .status{
+          img{
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  .buttonsBottom{
+    .retryButton{
+      padding: 10px 65px;
+    }
+    .continueButton{
+      padding: 10px 65px;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header{
+    margin-bottom: 70px;
+    .headerContent{
+      align-items: center;
+      flex-direction: column;
+      gap: 40px;
+      .logo{
+        padding: 45px 0 0 0;
+      }
+      .hsubtitle{
+        p{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .aside{
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px){
+  .header{
+    .headerContent{
+      .hsubtitle{
+        p{
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .title{
+    padding: 0 19px;
+    .titleLeft{
+      .back{
+        left: -7px;
+        margin-top: 11px;
+        width: 17px;
+      }
+    }
+    .titleRight{
+      gap: 0;
+      .titleTop{
+        align-items: center;
+        h1{
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .subtitle{
+    h2{
+      font-size: 16px;
+    }
+  }
+  .connection{
+    margin-top: 16px;
+    .connectionContent{
+      width: 100%;
+      justify-content: center;
+      border: 1px solid $success;
+    }
+  }
+  main{
+    margin-bottom: 37px;
+  }
+  .container{
+    width: 100%;
+  }
+  .formBlock{
+    padding: 0 17px;
+    .adminForm{
+      .adminName{
+        flex-direction: column;
+        gap: 14px;
+      }
+    }
+  }
+  .section{
+    .sectionTitle{
+      border-radius: 0;
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid #D8D8D8;
+      border-top: 2px solid #D8D8D8;
+      h3{
+        font-size: 16px;
+      }
+    }
+    .sectionContent{
+      .poleT{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        .yoursT{
+          h5{
+            font-size: 13px;
+          }
+        }
+        .requiredT{
+          h5{
+            font-size: 13px;
+          }
+        }
+      }
+      .pole{
+        gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        .status{
+          h5{
+            font-size: 13px;
+          }
+          img{
+            width: 18px;
+          }
+        }
+        .yours{
+          p{
+            font-size: 13px;
+            line-height: normal;
+          }
+        }
+        .required{
+          p{
+            font-size: 13px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+  .modulesSection{
+    .sectionTitle{
+      border-radius: 0;
+      border-right: none;
+      border-left: none;
+      border-bottom: 2px solid #D8D8D8;
+      border-top: 2px solid #D8D8D8;
+      h3{
+        font-size: 16px;
+      }
+    }
+    .sectionContent{
+      padding: 10px 20px;
+      .pole{
+        .poleContent{
+          h5{
+            font-size: 14px;
+          }
+          p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .buttonsBottom{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 14px;
+    .retryButton{
+      padding: 10px 65px;
+      justify-content: center;
+      width: 80%;
+    }
+    .continueButton{
+      padding: 10px 65px;
+      width: 80%;
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header{
+    margin-bottom: 45px;
+    .headerContent{
+      .hsubtitle{
+        width: 80%;
+      }
+    }
+  }
+  .title{
+    .titleRight{
+      gap: 10px;
+    }
+  }
+  .subtitle{
+    h2{
+      font-size: 15px;
+    }
+  }
+  .connection{
+    margin-top: 6px;
+    .connectionContent{
+      h3{
+        font-size: 15px;
+      }
+    }
+  }
+  .section{
+    .sectionContent{
+      .poleT{
+        .yoursT{
+          h5{
+            font-size: 11px;
+          }
+        }
+        .requiredT{
+          h5{
+            font-size: 11px;
+          }
+        }
+      }
+      .pole{
+        .status{
+          h5{
+            font-size: 11px;
+          }
+          img{
+            width: 15px;
+          }
+        }
+        .yours{
+          p{
+            font-size: 11px;
+          }
+        }
+        .required{
+          p{
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* */
+}

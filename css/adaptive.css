@@ -1,0 +1,207 @@
+@media only screen and (max-width: 1200px) {
+  .header .headerContent .logo {
+    padding: 40px 0 0 40px;
+  }
+  .header .headerContent .hsubtitle p {
+    margin-right: 327px;
+  }
+  .aside {
+    width: 300px;
+  }
+  .aside .menu a .menuBtn {
+    padding: 20px 0 20px 40px;
+  }
+  .section .sectionContent .pole {
+    padding: 10px;
+    margin: 0;
+  }
+  .section .sectionContent .pole .status img {
+    margin-right: 5px;
+  }
+  .buttonsBottom .retryButton {
+    padding: 10px 65px;
+  }
+  .buttonsBottom .continueButton {
+    padding: 10px 65px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .header {
+    margin-bottom: 70px;
+  }
+  .header .headerContent {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .header .headerContent .logo {
+    padding: 45px 0 0 0;
+  }
+  .header .headerContent .hsubtitle p {
+    margin-right: 0;
+  }
+  .aside {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header .headerContent .hsubtitle p {
+    font-size: 16px;
+  }
+  .title {
+    padding: 0 19px;
+  }
+  .title .titleLeft .back {
+    left: -7px;
+    margin-top: 11px;
+    width: 17px;
+  }
+  .title .titleRight {
+    gap: 0;
+  }
+  .title .titleRight .titleTop {
+    align-items: center;
+  }
+  .title .titleRight .titleTop h1 {
+    font-size: 18px;
+  }
+  .subtitle h2 {
+    font-size: 16px;
+  }
+  .connection {
+    margin-top: 16px;
+  }
+  .connection .connectionContent {
+    width: 100%;
+    justify-content: center;
+    border: 1px solid #00C974;
+  }
+  main {
+    margin-bottom: 37px;
+  }
+  .container {
+    width: 100%;
+  }
+  .formBlock {
+    padding: 0 17px;
+  }
+  .formBlock .adminForm .adminName {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .section .sectionTitle {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #D8D8D8;
+    border-top: 2px solid #D8D8D8;
+  }
+  .section .sectionTitle h3 {
+    font-size: 16px;
+  }
+  .section .sectionContent .poleT {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+  .section .sectionContent .poleT .yoursT h5 {
+    font-size: 13px;
+  }
+  .section .sectionContent .poleT .requiredT h5 {
+    font-size: 13px;
+  }
+  .section .sectionContent .pole {
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .section .sectionContent .pole .status h5 {
+    font-size: 13px;
+  }
+  .section .sectionContent .pole .status img {
+    width: 18px;
+  }
+  .section .sectionContent .pole .yours p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .section .sectionContent .pole .required p {
+    font-size: 13px;
+    line-height: normal;
+  }
+  .modulesSection .sectionTitle {
+    border-radius: 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #D8D8D8;
+    border-top: 2px solid #D8D8D8;
+  }
+  .modulesSection .sectionTitle h3 {
+    font-size: 16px;
+  }
+  .modulesSection .sectionContent {
+    padding: 10px 20px;
+  }
+  .modulesSection .sectionContent .pole .poleContent h5 {
+    font-size: 14px;
+  }
+  .modulesSection .sectionContent .pole .poleContent p {
+    font-size: 14px;
+  }
+  .buttonsBottom {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    gap: 14px;
+  }
+  .buttonsBottom .retryButton {
+    padding: 10px 65px;
+    justify-content: center;
+    width: 80%;
+  }
+  .buttonsBottom .continueButton {
+    padding: 10px 65px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    margin-bottom: 45px;
+  }
+  .header .headerContent .hsubtitle {
+    width: 80%;
+  }
+  .title .titleRight {
+    gap: 10px;
+  }
+  .subtitle h2 {
+    font-size: 15px;
+  }
+  .connection {
+    margin-top: 6px;
+  }
+  .connection .connectionContent h3 {
+    font-size: 15px;
+  }
+  .section .sectionContent .poleT .yoursT h5 {
+    font-size: 11px;
+  }
+  .section .sectionContent .poleT .requiredT h5 {
+    font-size: 11px;
+  }
+  .section .sectionContent .pole .status h5 {
+    font-size: 11px;
+  }
+  .section .sectionContent .pole .status img {
+    width: 15px;
+  }
+  .section .sectionContent .pole .yours p {
+    font-size: 11px;
+  }
+  .section .sectionContent .pole .required p {
+    font-size: 11px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  /* */
+}
+
+/*# sourceMappingURL=adaptive.css.map */

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+    <link type="text/css" href="css/adaptive.css" rel="stylesheet" />
+    <link type="text/css" href="css/zero.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header class="header">
+    <div class="headerContent">
+        <div class="logo"><img src="img/logo.png"  alt="logo"/></div>
+    </div>
+</header>
+<aside class="aside">
+    <div class="menu">
+        <a href="index.html"><div class="menuBtn"><p>1 Check compatibility</p></div></a>
+        <a href="database.html"><div class="menuBtn activeBtn"><p>2 Database configuration</p></div></a>
+        <a href="admin.html"><div class="menuBtn"><p>3 Admin registration</p></div></a>
+        <a href="modules.html"><div class="menuBtn"><p>4 Select modules</p></div></a>
+    </div>
+</aside>
+<main>
+    <div class="container">
+        <div class="title">
+            <div class="titleLeft">
+                <img src="icons/arrow.png" alt="arrow" class="back js-back"/>
+            </div>
+            <div class="titleRight">
+                <div class="titleTop">
+                    <h1>Check compatibility</h1>
+                    <div class="language">
+                        <div class="languageBtn js-languageBtn">
+                            <p>ENG</p><img src="./icons/chevron.png" alt="chevron"/>
+                        </div>
+                        <ul class="languageList js-languageList">
+                            <li><p>ENG</p><img src="icons/check.png" alt="check"></li>
+                            <li><p>UA</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="subtitle">
+                    <h2><b>Database type:</b> MySQL</h2>
+                </div>
+                <div class="connection">
+                    <div class="connectionContent">
+                        <h3>Test connection succeeded</h3><img src="./icons/mark.png" alt="mark">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="formBlock">
+            <form class="databaseForm js-databaseForm">
+                <div class="databaseName">
+                    <label for="name">Database name<span>*</span></label>
+                    <input name="airycommercedb" type="text" id="name" placeholder="airycommercedb" required/>
+                </div>
+                <div class="databaseUserName">
+                    <label for="userName">Database username<span>*</span></label>
+                    <input name="usernamedb" type="text" id="userName" placeholder="usernamedb" required/>
+                </div>
+                <div class="databasePassword">
+                    <div class="passwordLabel">
+                        <label for="password">Database password<span>*</span></label>
+                        <div class="hideorshowBtn js-hideorshowBtn">
+                            <img src="icons/hide.png" alt="hide" class="js-toggleHideImg"/>
+                        </div>
+                    </div>
+                    <input name="password" type="password" class="js-password" id="password" placeholder="● ● ● ● ● ● ●"/>
+                </div>
+                <div class="databaseAdvanced">
+                    <div class="advancedTitle js-advancedTitle">
+                        <img src="icons/chevron.png" class="chevron chevron-active js-chevron-advanced" alt="chevron" />
+                        <h3>Advanced options</h3>
+                    </div>
+                    <div class="advancedContent js-advancedContent">
+                        <div class="databaseHost">
+                            <label for="host">Host<span>*</span></label>
+                            <input name="host" type="text" id="host" placeholder="localhost2121" required/>
+                        </div>
+                        <div class="databasePort">
+                            <label for="port">Port number</label>
+                            <input name="port" type="text" id="port" placeholder="334749"/>
+                        </div>
+                        <div class="databaseTableNamePrefix">
+                            <label for="TableNamePrefix">Table name prefix</label>
+                            <input name="TableNamePrefix" type="text" id="TableNamePrefix" class="TableNamePrefixInput" placeholder="airycommerce_"/>
+                            <p>If more than one application will be sharing this database, a unique table name prefix -such as airy_ - will prevent collisions. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttonsBottom">
+                    <button class="retryButton js-retryButton" type="button">Retry<img src="icons/retry.png" alt="retry"></button>
+                    <button class="continueButton">Continue</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<script src="js/main.js"></script>
+<script src="js/database.js"></script>
+</body>
+</html>
